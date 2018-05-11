@@ -1,12 +1,11 @@
-using DevExpress.XtraGrid.Views.Grid.Handler;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using DevExpress.XtraGrid.Views.Grid;
+using DevExpress.XtraGrid.Views.BandedGrid;
+using DevExpress.XtraGrid.Views.BandedGrid.Handler;
 
-namespace DevExpress.S170736 {
-    public class MyGridHandler : GridHandler {
-        public MyGridHandler(GridView gridView)
+namespace DevExpress.S170736
+{
+    public class MyGridHandler : BandedGridHandler {
+        public MyGridHandler(BandedGridView gridView)
             : base(gridView) {
         }
         protected override XtraGrid.Menu.GridViewFooterMenu CreateGridViewFooterMenu(GridView gridView) {
